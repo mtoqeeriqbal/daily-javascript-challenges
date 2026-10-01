@@ -64,3 +64,17 @@ daily-javascript-challenges/
 - `solution.js` is the main file in every challenge folder.
 - Add `index.html` only when the challenge actually needs it.
 - Do not create files or folders that weren't asked for.
+
+---
+
+## Commit
+
+Once the solution is complete, help me prepare the Git commit.
+
+Use this commit message format:
+
+```text
+Challenge #X: Challenge Name
+```
+
+Example: `Challenge #1: Binary to Decimal`
