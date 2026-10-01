@@ -10,14 +10,14 @@ One coding challenge per day, solved in vanilla JavaScript.
 
 ## Stats
 
-- **Solved:** 0
-- **Current streak:** 0 days
+- **Solved:** 1
+- **Current streak:** 1 day
 
 ## Progress
 
 | #   | Challenge         | Date | Concepts | Solution |
 | --- | ----------------- | ---- | -------- | -------- |
-| 001 | Binary to Decimal |      |          | [solution](001-binary-to-decimal/solution.js) |
+| 001 | Binary to Decimal | 2026-10-01 | `for` loop, string indexing, `**` operator, type coercion | [solution](001-binary-to-decimal/solution.js) |
 
 ## How to Run
 
@@ -33,4 +33,5 @@ Challenges that need a browser include an `index.html` — open it directly in a
 
 Key "aha" moments and mistakes worth remembering, with the challenge where each happened.
 
-- _Nothing yet — the first one is coming._
+- **001:** `binary[i]` is a string, not a number. `*` converts it to a number automatically (`4 * "1"` → `4`), but `+` would join strings instead (`0 + "1"` → `"01"`). Use `Number()` to make the conversion explicit.
+- **001:** Keep comments in sync with the code. My expected-output comment went stale when I changed the test input.
