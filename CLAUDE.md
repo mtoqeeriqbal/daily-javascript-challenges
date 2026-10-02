@@ -69,7 +69,10 @@ daily-javascript-challenges/
 
 ## Commit
 
-Once the solution is complete, help me prepare the Git commit.
+**Never run `git commit` (or any command that creates or rewrites commits) in this repository.** I make every commit myself.
+
+- Do not add `Co-Authored-By` or any other Claude/AI attribution lines anywhere — commits, files, or messages.
+- Once the solution is complete, only suggest the commit message. I will stage and commit it myself.
 
 Use this commit message format:
 
