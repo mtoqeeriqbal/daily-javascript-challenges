@@ -51,16 +51,21 @@ daily-javascript-challenges/
 ├── 001-binary-to-decimal/
 │   └── solution.js
 │
-├── 002-challenge-name/
+├── ...
+│
+├── 004-stellar-classification/
+│   ├── problem.md      # problem statement + tests (from Challenge #4 onward)
 │   └── solution.js
 │
-├── 003-challenge-name/
+├── 005-challenge-name/
+│   ├── problem.md
 │   ├── index.html      # only when the challenge needs a browser/DOM
 │   └── solution.js
 │
 └── ...
 ```
 
+- From Challenge #4 onward, every challenge folder has a `problem.md` with the problem statement and the freeCodeCamp tests. Challenges 001–003 don't have one.
 - `solution.js` is the main file in every challenge folder.
 - Add `index.html` only when the challenge actually needs it.
 - Do not create files or folders that weren't asked for.
