@@ -10,7 +10,7 @@ One coding challenge per day, solved in vanilla JavaScript.
 
 ## Stats
 
-- **Solved:** 3
+- **Solved:** 4
 - **Current streak:** 1 day
 
 ## Progress
@@ -20,6 +20,7 @@ One coding challenge per day, solved in vanilla JavaScript.
 | 001 | Binary to Decimal | 2026-10-01 | `for` loop, string indexing, `**` operator, type coercion | [solution](001-binary-to-decimal/solution.js) |
 | 002 | Decimal to Binary | 2026-10-02 | `do...while` loop, `%` operator, `Math.floor`, string building | [solution](002-decimal-to-binary/solution.js) |
 | 003 | Password Strength | 2026-10-05 | `for...of` loop, regex `.test()`, `includes()`, boolean flags, early `return` | [solution](003-password-strength/solution.js) |
+| 004 | Stellar Classification | 2026-10-07 | `switch (true)`, comparison operators, `&&`, `default` case | [solution](004-stellar-classification/solution.js) |
 
 ## How to Run
 
@@ -41,3 +42,4 @@ Key "aha" moments and mistakes worth remembering, with the challenge where each 
 - **002:** The same `+` coercion that was a bug in 001 is the tool here: `remainder + binary` joins a number onto a string to build the result.
 - **003:** Boolean flags let one loop collect several facts at once; the scoring happens after the loop. Upper and lowercase share one flag check (`hasUppercase && hasLowercase`) because they count as a single rule.
 - **003:** Ordered early returns (`< 2`, then `<= 3`, then the rest) avoid range checks like `score >= 2 && score <= 3`.
+- **004:** `switch (true)` matches the first `case` whose expression is `true`, so it can stand in for an `if...else if` chain of range checks. `default` catches anything no case matched, such as a negative temperature.
