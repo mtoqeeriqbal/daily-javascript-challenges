@@ -10,7 +10,7 @@ One coding challenge per day, solved in vanilla JavaScript.
 
 ## Stats
 
-- **Solved:** 5
+- **Solved:** 6
 - **Current streak:** 1 day
 
 ## Progress
@@ -22,6 +22,7 @@ One coding challenge per day, solved in vanilla JavaScript.
 | 003 | Password Strength | 2026-10-05 | `for...of` loop, regex `.test()`, `includes()`, boolean flags, early `return` | [solution](003-password-strength/solution.js) |
 | 004 | Stellar Classification | 2026-10-07 | `switch (true)`, comparison operators, `&&`, `default` case | [solution](004-stellar-classification/solution.js) |
 | 005 | Exoplanet Search | 2026-10-09 | `for...of` loop, regex `.test()`, `charCodeAt()`, `Number()`, average, early `return` | [solution](005-exoplanet-search/solution.js) |
+| 006 | Phone Home | 2026-10-09 | `for...of` loop, `.length`, `toFixed()`, `Number()` | [solution](006-phone-home/solution.js) |
 
 ## How to Run
 
@@ -45,3 +46,5 @@ Key "aha" moments and mistakes worth remembering, with the challenge where each 
 - **003:** Ordered early returns (`< 2`, then `<= 3`, then the rest) avoid range checks like `score >= 2 && score <= 3`.
 - **004:** `switch (true)` matches the first `case` whose expression is `true`, so it can stand in for an `if...else if` chain of range checks. `default` catches anything no case matched, such as a negative temperature.
 - **005:** Character codes turn letters into numbers: `"A".charCodeAt(0)` is 65, so subtracting 55 maps `A`–`Z` to 10–35. `parseInt(character, 36)` does the same conversion in one call, because base 36 uses digits 0–9 plus A–Z.
+- **006:** `toFixed(4)` returns a string and keeps trailing zeros (`(2.5).toFixed(4)` → `"2.5000"`). Wrapping it in `Number()` gives back a number and drops them (`2.5`).
+- **006:** The number of satellites is `distances.length - 1`, because each distance is one hop between two points.
